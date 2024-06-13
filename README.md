@@ -147,3 +147,31 @@ public class BasicOps {
     }
 }
 ```
+### Operator Precedence and Associativity in Java
+
+The table below illustrates the precedences and associativity of Java operators. `→` denotes associativity from left to right, while `←` denotes right to left. Operators are shown in decreasing order of their precedence.
+
+
+### Table 2: Precedence of operators
+
+| Operator type            | Operators                    |
+|--------------------------|------------------------------|
+| access (→)               | `[]` `()` `.`                |
+| postfix                  | `expr++` `expr--`            |
+| unary (←)                | `++expr` `--expr` `+expr` `-expr` `∼` `!` |
+| cast, object creation (←) | `(type)` `new`               |
+| multiplicative (→)       | `*` `/` `%`                  |
+| additive (→)             | `+` `-`                      |
+| shift (→)                | `<<` `>>` `>>>`              |
+| relational               | `<` `>` `<=` `>=` `instanceof` |
+| equality (→)             | `==` `!=`                    |
+| bitwise AND (→)          | `&`                          |
+| bitwise XOR (→)          | `^`                          |
+| bitwise OR (→)           | `|`                          |
+| logical AND (→)          | `&&`                         |
+| logical OR (→)           | `||`                         |
+| ternary (←)              | `cond ? expr1 : expr2`       |
+| assignment (←)           | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `|=` `<<=` `>>=` `>>>=` |
+
+- Operators are shown in decreasing order of their precedence.
+- `→` denotes associativity from left to right, while `←` denotes right to left.

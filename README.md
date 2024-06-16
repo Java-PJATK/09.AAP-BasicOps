@@ -175,3 +175,36 @@ The table below illustrates the precedences and associativity of Java operators.
 
 - Operators are shown in decreasing order of their precedence.
 - `→` denotes associativity from left to right, while `←` denotes right to left.
+
+### Precedence and Associativity Table (Java Operators)
+
+| Operator Type                | Operators                           | Associativity |
+|------------------------------|-------------------------------------|---------------|
+| access (→)                   | `[]`, `()`, `.`                     | left to right |
+| postfix                      | `expr++`, `expr--`                  | left to right |
+| unary (←)                    | `++expr`, `--expr`, `+expr`, `-expr`, `∼`, `!` | right to left |
+| cast, object creation (←)    | `(type)`, `new`                     | right to left |
+| multiplicative (→)           | `*`, `/`, `%`                       | left to right |
+| additive (→)                 | `+`, `-`                            | left to right |
+| shift (→)                    | `<<`, `>>`, `>>>`                   | left to right |
+| relational                   | `<`, `>`, `<=`, `>=`, `instanceof`  | left to right |
+| equality (→)                 | `==`, `!=`                          | left to right |
+| bitwise AND (→)              | `&`                                 | left to right |
+| bitwise XOR (→)              | `^`                                 | left to right |
+| bitwise OR (→)               | `|`                                 | left to right |
+| logical AND (→)              | `&&`                                | left to right |
+| logical OR (→)               | `||`                                | left to right |
+| ternary (←)                  | `cond ? expr1 : expr2`              | right to left |
+| assignment (←)               | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `^=`, `|=`, `<<=`, `>>=`, `>>>=` | right to left |
+
+### Explanation:
+
+- **Associativity:** Indicates the order in which operators of the same precedence are evaluated relative to each other.
+  - **Left to right (→):** Operators are evaluated from left to right within the same precedence level.
+  - **Right to left (←):** Operators are evaluated from right to left within the same precedence level.
+
+- **Precedence:** Operators at higher precedence levels are evaluated before those at lower levels.
+
+This table is crucial for understanding how expressions are evaluated in Java. Operators of higher precedence are evaluated first, and when operators have the same precedence, the associativity determines the order of evaluation.
+
+Always refer to such tables to clarify the order of operations in complex expressions, ensuring your code behaves as intended and follows the rules of operator precedence and associativity in Java.
